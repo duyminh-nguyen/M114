@@ -4,6 +4,78 @@
 
 ### Daten_Codieren
 
+1. **Ergänzung der Tabelle:**
+   - Studieren Sie die vollständig ausgefüllte Tabelle und beachten Sie insbesondere die Spalten mit den Binärwerten. Was fällt Ihnen auf?
+
+DEC | HEX | BIN 23 | BIN 22 | BIN 21 | BIN20
+--- | --- | ------ | ------ | ------ | ------
+0   | 0   | 0      | 0      | 0      | 0
+1   | 1   | 0      | 0      | 0      | 1
+2   | 2   | 0      | 0      | 1      | 0
+3   | 3   | 0      | 0      | 1      | 1
+4   | 4   | 0      | 1      | 0      | 0
+5   | 5   | 0      | 1      | 0      | 1
+6   | 6   | 0      | 1      | 1      | 0
+7   | 7   | 0      | 1      | 1      | 1
+8   | 8   | 1      | 0      | 0      | 0
+9   | 9   | 1      | 0      | 0      | 1
+10  | A   | 1      | 0      | 1      | 0
+11  | B   | 1      | 0      | 1      | 1
+12  | C   | 1      | 1      | 0      | 0
+13  | D   | 1      | 1      | 0      | 1
+14  | E   | 1      | 1      | 1      | 0
+15  | F   | 1      | 1      | 1      | 1
+
+2. **Umrechnung von Dezimal zu Binär:**
+   - Dezimalzahl: 911
+   - Binärzahl: 1110001111
+
+3. **Umrechnung von Binär zu Dezimal:**
+   - Binärzahl: 10110110
+   - Dezimalzahl: 182
+
+4. **Umrechnung von Binär zu Hexadezimal:**
+   - Binärzahl: 1110001010100101
+   - Hexadezimalzahl: E2A5
+
+5. **Addition von binären Zahlen:**
+   - 11011001
+   - + 01110101
+   - ----------
+   - 100101110 (Übertrag wird ignoriert)
+
+6. **Bedeutung der binären Werte:**
+   - a. Möglicherweise eine IP-Adresse oder eine andere Form von digitaler Adresse.
+   - b. Kann eine Folge von Daten oder Steuerbefehlen darstellen.
+
+7. **Linux-Bash-Zeile:**
+   - Die Zeile könnte die Berechtigungen für die Datei "CreateWeeklyReport" auf 751 setzen, wobei 7 die Berechtigungen für den Eigentümer, 5 die Berechtigungen für die Gruppe und 1 die Berechtigungen für andere Benutzer darstellt.
+
+8. **Codebreite für Kabinenzählung:**
+   - Die Codebreite hängt von der Anzahl der Gondeln ab, die maximal gleich der nächstgrößeren Potenz von 2 sein sollte. Für 107 Gondeln würde eine Codebreite von 7 Bit ausreichen.
+
+9. **Speicherkapazität mit 12-Bit-Adress-/16-Bit-Datenbus:**
+   - Die Speicherkapazität beträgt \( 2^{12} \) Adressen * 16 Bit = 65536 Bytes oder 64 kiB.
+
+10. **Übertragungsraten mit serieller Leitung:**
+    - a. Mit 1 MHz Taktsignal können pro Sekunde 1 Million Bytes übertragen werden.
+    - b. Bei 8 Bit-parallel Verbindung wären es 8 Millionen Bytes pro Sekunde.
+
+11. **Vorzeichenbehaftete Binärzahlen:**
+    - a. Für unsigned integer: Kleinster Wert: 0, Größter Wert: 255.
+    - b. Für signed integer: Kleinster Wert: -128, Größter Wert: 127.
+    - c. \( +83 \) als signed integer: 01010011
+    - d. \( -83 \) als signed integer mit Zweierkomplement: 10101101
+    - e. Die Addition von \( 01010011 + 10101101 \) ergibt 0.
+    - f. Die Dezimalzahl 0 als signed integer: 00000000
+    - g. Die Dezimalzahl +150 kann nicht in einen vorzeichenbehafteten Binärwert umgewandelt werden, da dieser über den maximal
+
+12. **Fliesskommazahlen (Floating Point Numbers):**
+   - Fliesskommazahlen sind eine Möglichkeit, Zahlen mit Dezimalstellen in Computern darzustellen.
+   - Eine Fliesskommazahl wird üblicherweise als Mantisse und Exponent dargestellt, z.B. \(1.234 \times 10^5\).
+   - Die Mantisse repräsentiert die signifikanten Stellen der Zahl, während der Exponent die Größenordnung angibt.
+   - Eine mögliche Darstellung in Binärformat wäre nach dem IEEE 754 Standard, der eine Vorzeichenbit, einen Exponenten und eine Mantisse verwendet.
+
 ### Komprimieren
 
 1. **Huffman-Algorithmus:**
