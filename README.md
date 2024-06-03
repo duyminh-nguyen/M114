@@ -6,6 +6,24 @@
 
 ### Komprimieren
 
+1. **Huffman-Algorithmus:**
+   - In anderen IT-Bereichen kommen Baumstrukturen beispielsweise in Datenbanken (B-Bäume, AVL-Bäume) und Dateisystemen (Verzeichnisbäume) vor.
+   - Ein binärer Baum unterscheidet sich von einem nicht binären Baum dadurch, dass jeder Knoten höchstens zwei Kinder hat.
+
+2. **Huffman-Algorithmus:**
+   - Diese Aufgabe erfordert die Erstellung eines Huffman-Codes für ein selbst gewähltes Wort und den Austausch der Codes mit einem Partner zur Überprüfung der Dekomprimierungsfähigkeit.
+
+3. **RLC:**
+   - Bei einem Farbbild könnten benachbarte Pixel mit identischer Farbe zusammengefasst werden, ähnlich wie bei einem Schwarz/Weiß-Bild, jedoch unter Berücksichtigung der Farbkanäle (z.B. RGB).
+   - Die Bitbreite für die Codierung hängt von der Anzahl der Farben im Bild ab und sollte ausreichend sein, um alle möglichen Farbwerte darzustellen. Bei einem einfarbigen Bild würde eine Bitbreite von 1 ausreichen.
+
+4. **RLC:**
+   - Die Grafik sollte als wiederholendes Muster von Schwarz und Weiß aussehen, beginnend mit Weiß in der linken oberen Ecke. Die genaue Darstellung hängt von der Reihenfolge und Anzahl der wiederholten Farben im Code ab.
+
+8. **Weitere Verfahren für verlustlose Kompression:**
+   - Weitere Verfahren sind z.B. das Lempel-Ziv-Welch (LZW) Verfahren, Burrows-Wheeler-Transformation (BWT), Run-Length-Encoding (RLC) und das ZIP-Kompressionsverfahren.
+   - Daten, die verlustlos komprimiert werden sollen, sind solche, bei denen keine Information verloren gehen darf, z.B. Textdokumente, Programmcode, oder Bilddaten im RAW-Format.
+
 ### Bilder
 
 1. Bestimmen Sie die Farben für die folgenden RGB-Farbcodes (in DEZ und HEX). Nutzen Sie den RGB-Farbenmixer. Benutzen Sie dazu die beiden Online-Tools: 
