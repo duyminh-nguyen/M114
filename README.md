@@ -210,3 +210,83 @@ DEC | HEX | BIN 23 | BIN 22 | BIN 21 | BIN20
 15. Was ist der Unterschied zwischen einem Codec und einem Mediencontainer?
     - **Codec:** Komprimierungs- und Dekomprimierungsalgorithmen zur Codierung und Decodierung von Audio- und Videodaten.
     - **Mediencontainer:** Enthält mehrere Mediendateien, Metadaten und den Codec zur Wiedergabe der Medien.
+
+16. 
+#### a. Warum benötigt man AD-Wandler?
+
+AD-Wandler (Analog-Digital-Wandler) werden benötigt, um analoge Signale, wie sie beispielsweise von Mikrofonen oder Temperatursensoren erzeugt werden, in digitale Signale umzuwandeln. Dies ist wichtig, weil digitale Signale von Computern und digitalen Systemen verarbeitet, gespeichert und übertragen werden können. Analoge Signale können variieren und sind anfällig für Störungen und Verzerrungen, während digitale Signale stabiler und einfacher zu handhaben sind.
+
+#### b. Warum geht eine A/D-Wandlung immer mit einem Datenverlust einher?
+
+Eine A/D-Wandlung geht immer mit einem Datenverlust einher, weil der Prozess der Digitalisierung eine kontinuierliche analoge Welle in eine diskrete Anzahl von Datenpunkten umwandelt. Dabei wird das kontinuierliche Signal in zeitliche Intervalle unterteilt (Sampling) und jedem dieser Intervalle ein bestimmter Wert zugewiesen (Quantisierung). Da es eine unendliche Anzahl von möglichen Werten im analogen Signal gibt, aber nur eine endliche Anzahl von Werten nach der Digitalisierung, gehen dabei zwangsläufig Informationen verloren.
+
+#### c. Gibt eine höhere oder eine tiefere Samplingrate eine präzisere Abbildung des Originals? Begründen Sie!
+
+Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies liegt daran, dass bei einer höheren Samplingrate mehr Datenpunkte des analogen Signals erfasst werden. Nach dem Nyquist-Shannon-Abtasttheorem muss die Samplingrate mindestens doppelt so hoch sein wie die höchste Frequenz des zu digitalisierenden Signals, um eine verlustfreie Rekonstruktion zu ermöglichen. Wenn die Samplingrate höher ist, werden mehr Details des analogen Signals erfasst, wodurch die digitale Repräsentation genauer wird und das Signal bei der Wiedergabe näher am Original bleibt.
+
+### Bilder Komprimieren
+
+1. Um ein gewisses Verständnis für die Luminanz-Chrominanz-Beschreibung von Farben zu erhalten, lösen sie die folgenden Aufgaben. Benutzen sie dazu dieses Online-Tool: https://colorizer.org/
+    - RGB 255/255/255 entspricht Weiss und ergibt in YCbCr: Y = 1, Cb = 0, Cr = 0
+    - RGB 0/0/0 entspricht Schwarz und ergibt in YCbCr: Y = 0, Cb = 0, Cr = 0
+    - Y:0, Cb:0.5, Cr:0 entspricht der Farbe: Blau
+    - Y:0, Cb:-0.5, Cr:0 entspricht der Farbe: Gelb
+    - Y:0, Cb:0, Cr:0.5 entspricht der Farbe: Rot
+    - Y:0, Cb:0, Cr:-0.5 entspricht der Farbe: Cyan
+    - Y:0.3, Cb:0.5, Cr:-0.17 entspricht der Farbe: Hellblau
+
+2. Ein RGB-Farbbild benutzt nur die Farbe Weiss als Hintergrund und ein Hellblau mit folgenden Werten: R=33, G=121, B=239 (8 Bit pro Farbkanal). Das Bild soll in ein Graustufenbild umgewandelt werden. Berechnen sie den für das Hellblau entsprechende Grauwert. (8 Bit pro Farbkanal)
+
+    Der Grauwert kann mit der Formel berechnet werden:
+    \[
+    \text{Gray} = 0.299 \times R + 0.587 \times G + 0.114 \times B
+    \]
+
+    Für Hellblau (R=33, G=121, B=239):
+    \[
+    \text{Gray} = 0.299 \times 33 + 0.587 \times 121 + 0.114 \times 239 \approx 110.34
+    \]
+
+3. Berechnen sie, wieviel Speicher eingespart wird, wenn ein Bild mit Subsampling 4:1:1 komprimiert wird.
+
+    Bei 4:1:1-Subsampling werden die Chrominanzinformationen (Cb und Cr) nur für jeden vierten Pixel gespeichert. Dies bedeutet eine Reduktion der Chrominanzdaten auf 25%. Der Speicherbedarf für die Chrominanzdaten beträgt somit nur 25% der ursprünglichen Datenmenge, wodurch insgesamt etwa 50% Speicherplatz eingespart werden können, wenn man davon ausgeht, dass die Luminanzdaten unkomprimiert bleiben.
+
+4. Der folgende Youtube-Film beschäftigt sich mit RGB und YCrCb: https://www.youtube.com/watch?v=3dET-EoIMM8 Schauen sie den an und beantworten sie anschliessend diese Fragen:
+   - **a. Kann man durch die Bildumwandlung vom RGB- in den YCbCr-Farbraum Speicherplatz einsparen?**
+  - Ja, durch die Umwandlung und anschließende Subsampling der Chrominanzkanäle (Cb und Cr) kann Speicherplatz eingespart werden.
+  
+- **b. Kann ein Beamer ein Bild im YCbCr-Farbraum darstellen?**
+  - Nein, ein Beamer muss das YCbCr-Signal wieder in RGB umwandeln, um es korrekt darstellen zu können.
+
+- **c. Wie rechnet man ein Farbbild in ein Graustufenbild um?**
+  - Ein Farbbild wird in ein Graustufenbild umgewandelt, indem man die Helligkeitsinformation (Luminanz) extrahiert, typischerweise mit der Formel: \[ \text{Grauwert} = 0.299 \times R + 0.587 \times G + 0.114 \times B \]
+
+- **d. Warum hat bei der Umwandlung eines Farbbildes in ein Graustufenbild der Grünanteil am meisten Gewicht?**
+  - Der Grünanteil hat am meisten Gewicht, weil das menschliche Auge am empfindlichsten auf Grüntöne reagiert. Dies entspricht den physiologischen Eigenschaften des menschlichen Sehvermögens.
+
+
+5. Fragen zu Chroma-Subsampling (YouTube-Video)
+
+- **a. Warum verschlechtert sich die Bildschärfe von 4:1:1-Subsampling gegenüber 4:4:4-Subsampling nicht?**
+  - Die Bildschärfe bleibt weitgehend erhalten, weil die Luminanzinformationen (Y) in voller Auflösung gespeichert werden, und das menschliche Auge weniger empfindlich auf Farbdetails (Chrominanz) reagiert.
+
+- **b. Ein quadratisches 24-Bit-RGB-Bild mit einer Kantenlänge von 1000 Pixel soll mit 4:1:1 unterabgetastet werden. Wieviel Speicherplatz wird damit eingespart?**
+
+  Ein 24-Bit-RGB-Bild hat 3 Kanäle (R, G, B) mit je 8 Bit pro Kanal:
+
+  \[ \text{Speicherplatz} = 1000 \times 1000 \times 3 \times 8 \text{ Bit} = 24 \text{ MBit} \]
+
+  Bei 4:1:1 Subsampling:
+
+  - Y: 1000 x 1000 (volle Auflösung)
+  - Cb: 250 x 1000 (horizontale Unterabtastung um Faktor 4)
+  - Cr: 250 x 1000 (horizontale Unterabtastung um Faktor 4)
+
+  \[ \text{Speicherplatz nach Subsampling} = 1000 \times 1000 \times 8 \text{ Bit (Y)} + 250 \times 1000 \times 8 \text{ Bit (Cb)} + 250 \times 1000 \times 8 \text{ Bit (Cr)} = 16 \text{ MBit} \]
+
+  Die Speicherersparnis:
+
+  \[ \text{Ersparnis} = \frac{24 \text{ MBit} - 16 \text{ MBit}}{24 \text{ MBit}} \approx 33.33\% \]
+
+
+
