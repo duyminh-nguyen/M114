@@ -289,4 +289,37 @@ Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies lie
   \[ \text{Ersparnis} = \frac{24 \text{ MBit} - 16 \text{ MBit}}{24 \text{ MBit}} \approx 33.33\% \]
 
 
+### Kryptographie
+#### SYMMETRISCHE VERSCHLÜSSELUNGSVERFAHREN
+
+2.
+GHU DQJULII HUIROJW CXU WHHCHLW GLH ZXHUIHO VLQG JHIDOOHQ LFK 
+NDP VDK XQG VLHJWH WHLOH XQG KHUUVFKH
+
+DER ANGRIFF FUEHLTE DUR VEEFEIV DIE UUEIFELE SIND GEFAELLEN ICH KAM SAH UND SIEGTE TEILE UND HERRSCHE
+
+3.
+Das Wort "BEEF" wird mit dem Schlüsselwort "AFFE" verschlüsselt zu "BJJI".
+Der Geheimtext "WRKXQT" wird mit dem Schlüsselwort "SECRET" entschlüsselt zu "DMHILA".
+
+4.
+"DER VERSCHLUESSELUNGSCODE IST GEBROCHEN"
+
+WFR SBRUDHLALUCSUEAHFPDPXHGZGO TGF ZAFUEOSR
+
+5.
+Ergebnis: 1001111110011110
+
+#### ASYMMETRISCHE VERSCHLÜSSELUNGSVERFAHREN
+2.
+- Bei der Entschlüsselung als "Hasler Harry" sollte es nicht möglich sein, die Nachricht zu entschlüsseln, da der private Schlüssel nicht mit dem verwendeten öffentlichen Schlüssel zur Verschlüsselung übereinstimmt.
+- Bei der Entschlüsselung als "Muster Felix" sollte die Nachricht erfolgreich entschlüsselt werden können, da der private Schlüssel mit dem verwendeten öffentlichen Schlüssel übereinstimmt.
+
+7. 
+- Beim ersten Überprüfen der Signatur am unveränderten Dokument sollte die Signatur gültig sein und die Integrität und Authentizität des Dokuments bestätigen.
+- Nach der vorgenommenen Änderung am Dokument wird die Signatur nicht mehr gültig sein. Die Überprüfung wird fehlschlagen, da die ursprüngliche Signatur für das ursprüngliche unveränderte Dokument erstellt wurde und nun nicht mehr mit dem veränderten Inhalt übereinstimmt.
+
+
+
+
 
