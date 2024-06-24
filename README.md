@@ -293,31 +293,84 @@ Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies lie
 #### SYMMETRISCHE VERSCHLÜSSELUNGSVERFAHREN
 
 2.
-GHU DQJULII HUIROJW CXU WHHCHLW GLH ZXHUIHO VLQG JHIDOOHQ LFK 
-NDP VDK XQG VLHJWH WHLOH XQG KHUUVFKH
-
-DER ANGRIFF FUEHLTE DUR VEEFEIV DIE UUEIFELE SIND GEFAELLEN ICH KAM SAH UND SIEGTE TEILE UND HERRSCHE
+   GHU DQJULII HUIROJW CXU WHHCHLW GLH ZXHUIHO VLQG JHIDOOHQ LFK 
+   NDP VDK XQG VLHJWH WHLOH XQG KHUUVFKH
+   
+   DER ANGRIFF FUEHLTE DUR VEEFEIV DIE UUEIFELE SIND GEFAELLEN ICH KAM SAH UND SIEGTE TEILE UND HERRSCHE
 
 3.
-Das Wort "BEEF" wird mit dem Schlüsselwort "AFFE" verschlüsselt zu "BJJI".
-Der Geheimtext "WRKXQT" wird mit dem Schlüsselwort "SECRET" entschlüsselt zu "DMHILA".
+   Das Wort "BEEF" wird mit dem Schlüsselwort "AFFE" verschlüsselt zu "BJJI".
+   Der Geheimtext "WRKXQT" wird mit dem Schlüsselwort "SECRET" entschlüsselt zu "DMHILA".
 
 4.
-"DER VERSCHLUESSELUNGSCODE IST GEBROCHEN"
+   "DER VERSCHLUESSELUNGSCODE IST GEBROCHEN"
 
-WFR SBRUDHLALUCSUEAHFPDPXHGZGO TGF ZAFUEOSR
+   WFR SBRUDHLALUCSUEAHFPDPXHGZGO TGF ZAFUEOSR
 
-5.
-Ergebnis: 1001111110011110
+5. Ergebnis: 1001111110011110
 
 #### ASYMMETRISCHE VERSCHLÜSSELUNGSVERFAHREN
 2.
-- Bei der Entschlüsselung als "Hasler Harry" sollte es nicht möglich sein, die Nachricht zu entschlüsseln, da der private Schlüssel nicht mit dem verwendeten öffentlichen Schlüssel zur Verschlüsselung übereinstimmt.
-- Bei der Entschlüsselung als "Muster Felix" sollte die Nachricht erfolgreich entschlüsselt werden können, da der private Schlüssel mit dem verwendeten öffentlichen Schlüssel übereinstimmt.
+   - Bei der Entschlüsselung als "Hasler Harry" sollte es nicht möglich sein, die Nachricht zu entschlüsseln, da der private Schlüssel nicht mit dem verwendeten öffentlichen Schlüssel zur Verschlüsselung übereinstimmt.
+   - Bei der Entschlüsselung als "Muster Felix" sollte die Nachricht erfolgreich entschlüsselt werden können, da der private Schlüssel mit dem verwendeten öffentlichen Schlüssel übereinstimmt.
 
 7. 
-- Beim ersten Überprüfen der Signatur am unveränderten Dokument sollte die Signatur gültig sein und die Integrität und Authentizität des Dokuments bestätigen.
-- Nach der vorgenommenen Änderung am Dokument wird die Signatur nicht mehr gültig sein. Die Überprüfung wird fehlschlagen, da die ursprüngliche Signatur für das ursprüngliche unveränderte Dokument erstellt wurde und nun nicht mehr mit dem veränderten Inhalt übereinstimmt.
+   - Beim ersten Überprüfen der Signatur am unveränderten Dokument sollte die Signatur gültig sein und die Integrität und Authentizität des Dokuments bestätigen.
+   - Nach der vorgenommenen Änderung am Dokument wird die Signatur nicht mehr gültig sein. Die Überprüfung wird fehlschlagen, da die ursprüngliche Signatur für das ursprüngliche unveränderte Dokument erstellt wurde und nun nicht mehr mit dem veränderten Inhalt übereinstimmt.
+
+#### DIE SCHLÜSSELVERWALTUNG
+
+1. Ein Public-Key kann durch Überprüfung der Signatur eines Zertifikats verifiziert werden, das den Public-Key zusammen mit Identitätsinformationen enthält.
+2. Die Public Key Infrastruktur (PKI) umfasst die Richtlinien, Prozesse, Rollen und Technologien zur Verwaltung von digitalen Zertifikaten und Public Keys.
+3. - Certification-Authority (CA): Eine CA ist eine vertrauenswürdige Organisation, die digitale Zertifikate ausstellt und verwaltet, um die Identität und den öffentlichen Schlüssel von Benutzern oder Systemen zu verifizieren.
+   - Trust-Center (TC): Ein Trust-Center ist eine Organisation, die die Schlüsselverwaltung und Sicherheitsdienste bereitstellt, oft im Rahmen einer PKI, um Vertrauen und Sicherheit in digitale Kommunikation zu gewährleisten.
+
+#### SICHERES INTERNET UND ZERTIFIKATE
+1. DigiCert EV RSA CA G2 und Issued On	Thursday, November 16, 2023 at 1:00:00 AM und Expires On	Friday, December 13, 2024 at 12:59:59 AM
+
+2. Common Name (CN)	R3
+   Organization (O)	Let's Encrypt
+   Organizational Unit (OU)	<Not Part Of Certificate>
+   Issued On	Sunday, June 2, 2024 at 7:31:20 PM
+   Expires On	Saturday, August 31, 2024 at 7:31:19 PM
+
+3. Webseite ist Not Secure, deshalb keine gültige Zertifikatsinformationen
+
+4. Um sicherzustellen, dass ich die echte Software-Version erhalte, überprüfe ich die offizielle Website des Herstellers und die digitale Signatur der heruntergeladenen Datei.
+
+5. Ja, es ist möglich, eine virtuelle Linux-Maschine mit VirtualBox und Ubuntu zu erstellen und dann eine Remoteverbindung von Ihrem Windows-PC über SSH einzurichten. 
+
+6. HTTP (HyperText Transfer Protocol) überträgt Daten unverschlüsselt über das Netzwerk und verwendet standardmäßig Port 80, während HTTPS (HyperText Transfer Protocol Secure) Daten mit SSL/TLS-Verschlüsselung schützt, um Sicherheit und Integrität der Übertragung zu gewährleisten und Port 443 verwendet. Bei HTTPS können mit Wireshark durch den Server Name Indication (SNI)-Header die besuchten Webseiten trotz Verschlüsselung identifiziert werden.
+
+7. Beide sind HTTPS, benützen aber andere Zertifikate von andere Organizationen
+
+8. CAcert bietet kostenlos SSL/TLS-Zertifikate an, die durch eine Community verifiziert werden, jedoch mit begrenzter Unterstützung in gängigen Webbrowsern. Let's Encrypt bietet ebenfalls kostenlose Zertifikate an, die automatisiert und weit verbreitet akzeptiert werden.
+
+   - Let's Encrypt ist eine von der Internet Security Research Group (ISRG) unterstützte Zertifizierungsstelle, die ebenfalls kostenlose SSL/TLS-Zertifikate anbietet.
+   - Die Zertifikate von Let's Encrypt sind automatisiert und werden durch den ACME-Protokollstandard bereitgestellt, was die Einrichtung und Erneuerung vereinfacht.
+   - Let's Encrypt-Zertifikate sind in den meisten modernen Webbrowsern und Betriebssystemen vorinstalliert und genießen ein hohes Maß an Vertrauen.
+
+   - CAcert ist eine Community-basierte Zertifizierungsstelle, die kostenlos SSL/TLS-Zertifikate anbietet.
+   - Die Zertifikate werden von einer Community von Freiwilligen ausgestellt, die Verifikation erfolgt durch das Web of Trust (WoT)-System.
+   - Die Vertrauensstellung der CAcert-Zertifikate in gängigen Webbrowsern ist jedoch begrenzt, da sie nicht in allen Browsern vorinstalliert sind und von vielen als weniger vertrauenswürdig angesehen werden.
+
+9. Für einen Webshop, wo Kreditkartenzahlungen verarbeitet werden, ist ein Extended Validation (EV) Zertifikat der richtige Typ. Es bietet die höchste Sicherheit und Vertrauensstufe, da es strengere Validierungsprozesse durchläuft und in Browsern eine grüne Adressleiste mit dem Unternehmensnamen anzeigt, was die Vertrauenswürdigkeit für Kunden erhöht.
+
+10. OpenPGP konzentriert sich auf die Sicherung von Kommunikation und Dateien durch Verschlüsselung und Signierung, während X.509 die Authentifizierung und Vertrauensstellung über digitale Zertifikate in einer Vielzahl von Anwendungen und Systemen ermöglicht.
+
+11. Beim Aufruf einer sicheren Webseite über HTTPS sendet der Webbrowser eine Anfrage an den Server, der daraufhin sein SSL/TLS-Zertifikat zur Authentifizierung zurücksendet. Dieses Zertifikat wird vom Browser überprüft, um die Identität des Servers zu bestätigen, bevor eine sichere Verschlüsselung der Daten mittels TLS-Protokoll ermöglicht wird.
+
+12. S/MIME steht für "Secure/Multipurpose Internet Mail Extensions" und ist ein Sicherheitsstandard für die Verschlüsselung und digitale Signierung von E-Mails, um deren Vertraulichkeit, Integrität und Authentizität sicherzustellen.
+
+13. Das Problem beim Archivieren verschlüsselter geschäftlicher E-Mails liegt darin, dass die Nachrichten entschlüsselt werden müssen, um sie zu archivieren, was Datenschutz- und Sicherheitsbedenken aufwerfen kann. Eine Lösung könnte darin bestehen, eine sichere Schlüsselverwaltung und transparente Entschlüsselungstechnologien zu implementieren, um den gesetzlichen Anforderungen zu entsprechen, ohne die Sicherheit zu gefährden.
+
+#### PGP und OpenPGP
+
+
+
+
+
+
 
 
 
