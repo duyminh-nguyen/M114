@@ -364,7 +364,23 @@ Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies lie
 
 13. Das Problem beim Archivieren verschlüsselter geschäftlicher E-Mails liegt darin, dass die Nachrichten entschlüsselt werden müssen, um sie zu archivieren, was Datenschutz- und Sicherheitsbedenken aufwerfen kann. Eine Lösung könnte darin bestehen, eine sichere Schlüsselverwaltung und transparente Entschlüsselungstechnologien zu implementieren, um den gesetzlichen Anforderungen zu entsprechen, ohne die Sicherheit zu gefährden.
 
+20. Fremden Public-Key verifizieren: Die Authentizität eines Public Keys kann durch ein digitales Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) überprüft werden. Diese bestätigt, dass der Schlüssel tatsächlich zu der Person gehört, von der Sie dies annehmen.
+
+21. Frage zum OpenPGP-Schlüssel: Ein OpenPGP-Schlüssel besteht aus einem Public Key und einem Private Key. Erkennbar ist er oft an einer Datei mit der Endung ".asc" oder ".gpg". Der Schlüssel enthält auch Informationen wie den Schlüsselinhaber und das Ablaufdatum.
+
+22. X.509-Schlüsselpaar: Ein X.509-Schlüsselpaar wird für S/MIME (Secure/Multipurpose Internet Mail Extensions) verwendet, um E-Mails zu signieren und zu verschlüsseln. Im Gegensatz zu OpenPGP basiert X.509 auf einer hierarchischen Struktur mit Zertifikaten von CAs. OpenPGP nutzt ein Web of Trust. S/MIME ist standardisierter und wird häufig in Unternehmensumgebungen genutzt.
+
 #### PGP und OpenPGP
+
+### Aufgabe für 08.07.24
+
+Blockchain-Verfahren: Eine Blockchain ist eine dezentrale, digitale Datenbank, die Informationen in Blöcken speichert, die durch kryptografische Verfahren miteinander verkettet sind. Jeder Block enthält Transaktionsdaten und einen Verweis auf den vorherigen Block, was Manipulationen nahezu unmöglich macht.
+
+Warum Blockchain? Blockchain bietet Sicherheit, Transparenz und Dezentralisierung. Dadurch wird Vertrauen in digitale Transaktionen geschaffen, ohne dass eine zentrale Autorität benötigt wird.
+
+Zusammenhang Blockchain zu Bitcoin, Ethereum, Smart Contracts: Bitcoin war die erste Anwendung der Blockchain-Technologie und dient als digitales Währungssystem. Ethereum erweiterte die Blockchain um programmierbare Verträge, sogenannte Smart Contracts, die automatisch ausgeführt werden, wenn vordefinierte Bedingungen erfüllt sind.
+
+Weitere Einsatzmöglichkeiten: Neben Kryptowährungen kann Blockchain in Lieferkettenmanagement, Gesundheitswesen, Wahlsystemen, digitaler Identitätsverifikation und im Immobiliensektor eingesetzt werden.
 
 
 
