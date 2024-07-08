@@ -95,7 +95,7 @@ DEC | HEX | BIN 23 | BIN 22 | BIN 21 | BIN20
 8. **Weitere Verfahren für verlustlose Kompression:**
    - Weitere Verfahren sind z.B. das Lempel-Ziv-Welch (LZW) Verfahren, Burrows-Wheeler-Transformation (BWT), Run-Length-Encoding (RLC) und das ZIP-Kompressionsverfahren.
    - Daten, die verlustlos komprimiert werden sollen, sind solche, bei denen keine Information verloren gehen darf, z.B. Textdokumente, Programmcode, oder Bilddaten im RAW-Format.
-
+***
 ### Bilder
 
 1. Bestimmen Sie die Farben für die folgenden RGB-Farbcodes (in DEZ und HEX). Nutzen Sie den RGB-Farbenmixer. Benutzen Sie dazu die beiden Online-Tools: 
@@ -211,7 +211,6 @@ DEC | HEX | BIN 23 | BIN 22 | BIN 21 | BIN20
     - **Codec:** Komprimierungs- und Dekomprimierungsalgorithmen zur Codierung und Decodierung von Audio- und Videodaten.
     - **Mediencontainer:** Enthält mehrere Mediendateien, Metadaten und den Codec zur Wiedergabe der Medien.
 
-16. 
 #### a. Warum benötigt man AD-Wandler?
 
 AD-Wandler (Analog-Digital-Wandler) werden benötigt, um analoge Signale, wie sie beispielsweise von Mikrofonen oder Temperatursensoren erzeugt werden, in digitale Signale umzuwandeln. Dies ist wichtig, weil digitale Signale von Computern und digitalen Systemen verarbeitet, gespeichert und übertragen werden können. Analoge Signale können variieren und sind anfällig für Störungen und Verzerrungen, während digitale Signale stabiler und einfacher zu handhaben sind.
@@ -223,7 +222,7 @@ Eine A/D-Wandlung geht immer mit einem Datenverlust einher, weil der Prozess der
 #### c. Gibt eine höhere oder eine tiefere Samplingrate eine präzisere Abbildung des Originals? Begründen Sie!
 
 Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies liegt daran, dass bei einer höheren Samplingrate mehr Datenpunkte des analogen Signals erfasst werden. Nach dem Nyquist-Shannon-Abtasttheorem muss die Samplingrate mindestens doppelt so hoch sein wie die höchste Frequenz des zu digitalisierenden Signals, um eine verlustfreie Rekonstruktion zu ermöglichen. Wenn die Samplingrate höher ist, werden mehr Details des analogen Signals erfasst, wodurch die digitale Repräsentation genauer wird und das Signal bei der Wiedergabe näher am Original bleibt.
-
+***
 ### Bilder Komprimieren
 
 1. Um ein gewisses Verständnis für die Luminanz-Chrominanz-Beschreibung von Farben zu erhalten, lösen sie die folgenden Aufgaben. Benutzen sie dazu dieses Online-Tool: https://colorizer.org/
@@ -288,7 +287,7 @@ Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies lie
 
   \[ \text{Ersparnis} = \frac{24 \text{ MBit} - 16 \text{ MBit}}{24 \text{ MBit}} \approx 33.33\% \]
 
-
+***
 ### Kryptographie
 #### SYMMETRISCHE VERSCHLÜSSELUNGSVERFAHREN
 
@@ -372,7 +371,7 @@ Eine höhere Samplingrate gibt eine präzisere Abbildung des Originals. Dies lie
 
 22. X.509-Schlüsselpaar: Ein X.509-Schlüsselpaar wird für S/MIME (Secure/Multipurpose Internet Mail Extensions) verwendet, um E-Mails zu signieren und zu verschlüsseln. Im Gegensatz zu OpenPGP basiert X.509 auf einer hierarchischen Struktur mit Zertifikaten von CAs. OpenPGP nutzt ein Web of Trust. S/MIME ist standardisierter und wird häufig in Unternehmensumgebungen genutzt.
 
-
+***
 ### Aufgabe für 08.07.24
 
 Blockchain-Verfahren: Eine Blockchain ist eine dezentrale, digitale Datenbank, die Informationen in Blöcken speichert, die durch kryptografische Verfahren miteinander verkettet sind. Jeder Block enthält Transaktionsdaten und einen Verweis auf den vorherigen Block, was Manipulationen nahezu unmöglich macht.
